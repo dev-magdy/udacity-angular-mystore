@@ -1,5 +1,7 @@
 # MyStore
 
+This project is my solution to Udacity Angular Cross-skill course on Angular. The project is a mini e-commerce site, where users can find 6 products to browse, add to cart and purchase. The whole app is designed in a Single-Page-App format (SPA), so no reloading occurs while navigating between pages.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
 
 ## Development server
