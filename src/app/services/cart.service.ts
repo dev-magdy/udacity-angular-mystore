@@ -19,7 +19,14 @@ export class CartService {
   }
 
   addItem(product: Product, q: number): void {
-    this.items.push({product: product, q: q})
+    const ind = this.items.findIndex(i => i.product.id == product.id);
+    if (ind >= 0) {
+      this.items[ind] = {product: product, q: this.items[ind].q + q}
+    }
+    else {
+      this.items.push({product: product, q: q})
+    }
+    alert("Added to cart!")
   }
 
   removeItem(id: number): void {
