@@ -16,7 +16,7 @@
 			</div>
 			<div class="mb-3">
 				<label class="form-label">Credit Card Number</label>
-				<input class="form-control" type="text" name="card-number" minlength="16" maxlength="16" placeholder="(16-digit number)" [(ngModel)]="cardNum" required>
+				<input class="form-control" type="text" name="card-number" minlength="16" maxlength="16" pattern="\d*" placeholder="(16-digit number)" [(ngModel)]="cardNum" required>
 			</div>
 			<button class="btn btn-primary" type="submit" [disabled]="form.invalid">Submit</button>
 		</form>	
